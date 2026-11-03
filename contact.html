@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="img/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<title>Contact · Zlatni Vez</title>
+<meta name="description" content="Ansambl Zlatni Vez, Serbian ethno vocal ensemble from Chicago. Od korena do Chicaga.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="topbar" data-tickets href="#"><span>Get your tickets here</span><span class="tb-sep">·</span><span class="tb-detail">December 20, Crkva Sveti Nikola, Lyons</span><span aria-hidden="true">→</span></a>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Ansambl Zlatni Vez, home">
+      <img src="img/mark.jpg" alt="">
+      <span><b>ZLATNI VEZ</b><small>Chicago</small></span>
+    </a>
+    <ul class="links" id="links"><li><a href="concerts.html">Concerts</a></li><li><a href="about.html">About</a></li><li><a href="kids.html">Kids &amp; Youth</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="partners.html">Partners</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li class="lang-m"><span class="lang"><a href="contact.html" aria-current="true">EN</a><span aria-hidden="true">|</span><a href="sr/contact.html" hreflang="sr-Latn" lang="sr-Latn">SR</a></span></li></ul>
+    <div class="lang"><a href="contact.html" aria-current="true">EN</a><span aria-hidden="true">|</span><a href="sr/contact.html" hreflang="sr-Latn" lang="sr-Latn">SR</a></div>
+    <a class="btn btn-beige donate-top" href="donate.html">Donate</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+  </div>
+</header>
+<main id="top">
+<section class="ethno-hero">
+    <div class="wrap"><h1>Write <span class="accent">to us</span></h1></div>
+  </section>
+  <div class="band" aria-hidden="true"></div>
+  <section>
+    <div class="wrap contact">
+      <div class="cinfo">
+                <dl>
+          <div><dt>Email</dt><dd class="mail"><a class="mailto" href="mailto:info@zlatnivez.org"><code>info@zlatnivez.org</code></a><button class="copy" data-copy="info@zlatnivez.org">Copy</button></dd></div>
+          <div><dt>Address</dt><dd>4315 Joliet Ave<br>Lyons, IL 60534</dd></div>
+          <div><dt>Rehearsals</dt><dd>Thursdays at St. Nicholas Serbian Orthodox Church, Lyons</dd></div>
+        </dl>
+        <div class="socials">
+          <a class="btn btn-line" href="https://www.instagram.com/ansamblzlatnivezchicago/" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn-line" href="https://www.youtube.com/watch?v=WMMG2UL6Dsg" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+      <form id="contactForm" name="contact" method="POST" action="https://formsubmit.co/info@zlatnivez.org">
+        <input type="hidden" name="_subject" value="New message from zlatnivez.org">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://zlatnivez.org/contact.html">
+        <p hidden><label>Leave empty <input type="text" name="_honey" id="bot" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label for="cName">Name</label><input id="cName" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="cEmail">Email</label><input id="cEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="field full"><label for="cTopic">Topic</label>
+          <select id="cTopic" name="topic">
+            <option>Concert booking</option><option>Tickets</option><option>Kids &amp; youth registration</option><option>Partnership</option><option>Donation</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field full"><label for="cMsg">Message</label><textarea id="cMsg" name="message" required></textarea></div>
+        <div class="form-foot"><button class="btn btn-red" type="submit">Send message</button><span class="status" id="status" role="status"></span></div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div style="display:grid;gap:14px;align-content:start">
+        <img src="img/logo.jpg" alt="Ansambl tradicionalne muzike Zlatni Vez logo">
+        <p class="slogan" style="font-size:1.4rem">Od korena do Chicaga</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="concerts.html">Concerts</a></li><li><a href="about.html">About us</a></li><li><a href="kids.html">Kids &amp; youth</a></li><li><a href="blog.html">Blog</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a data-tickets href="#">Tickets</a></li><li><a href="donate.html">Donate</a></li><li><a href="partners.html">Partners</a></li><li><a href="contact.html">Contact</a></li><li><a href="https://www.instagram.com/ansamblzlatnivezchicago/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.youtube.com/watch?v=WMMG2UL6Dsg" target="_blank" rel="noopener">YouTube</a></li></ul></div>
+      <div class="foot-contact"><h4>Contact</h4><address><b>Ansambl Zlatni Vez</b><br>4315 Joliet Ave<br>Lyons, IL 60534<br><a href="mailto:info@zlatnivez.org">info@zlatnivez.org</a></address></div>
+    </div>
+    <div class="copyline"><span>© 2026 Ansambl Zlatni Vez Chicago</span><span>Website by Squadplan</span></div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" hidden><img id="lbImg" alt=""><button class="btn btn-line" id="lbClose">Close</button></div>
+<script src="site.js"></script>
+</body>
+</html>
