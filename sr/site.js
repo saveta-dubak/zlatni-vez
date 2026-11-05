@@ -22,7 +22,7 @@ if ($("#cDays")) {
 
 // copy buttons
 $$(".copy").forEach(b => b.addEventListener("click", () => {
-  const done = () => { b.textContent = "Kopirano"; setTimeout(() => b.textContent = "Kopiraj", 1600); };
+  const done = () => { b.textContent = "Kopirano"; setTimeout(() => b.textContent = "Kopirajte", 1600); };
   const sel = () => { const r = document.createRange(); r.selectNodeContents(b.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
   try { navigator.clipboard.writeText(b.dataset.copy).then(done, sel); } catch (e) { sel(); }
 }));
@@ -40,7 +40,7 @@ if (donateBtn) {
   let freq = "once", amt = "50";
   const upd = () => {
     donateBtn.href = STRIPE_LINKS[freq][amt]; donateBtn.target = "_blank"; donateBtn.rel = "noopener";
-    donateBtn.textContent = "Doniraj" + (amt === "other" ? "" : " $" + amt) + (freq === "monthly" ? " mesečno" : "") + " preko Stripe-a";
+    donateBtn.textContent = "Donirajte" + (amt === "other" ? "" : " $" + amt) + (freq === "monthly" ? " mesečno" : "") + " preko Stripe-a";
   };
   $$("[data-amt]").forEach(b => b.addEventListener("click", () => { amt = b.dataset.amt; $$("[data-amt]").forEach(x => x.setAttribute("aria-pressed", x === b)); upd(); }));
   const otherBtn = $('[data-amt="other"]');
