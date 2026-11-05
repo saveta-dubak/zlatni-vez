@@ -343,6 +343,7 @@ a.mailto{text-decoration:none}
 .prog-img{object-position:center 12%}
 .gallery .tall img{object-position:center 20%}
 .todo{display:none!important}
+.faq{align-self:start;align-content:start}
 .donate-card.soon{align-content:start}
 .donate-card.soon h3{font:400 1.7rem/1.2 var(--f-display);margin:0}
 .donate-card.soon p:not(.eyebrow){color:var(--muted);margin:0}
