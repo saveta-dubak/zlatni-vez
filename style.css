@@ -532,9 +532,9 @@ a.ptile:hover .pt-logo{border-color:var(--gold);box-shadow:0 10px 24px -16px rgb
 .sponsor-steps{display:flex;flex-wrap:wrap;gap:10px 26px;margin:0;padding:0;list-style:none;counter-reset:st}
 .sponsor-steps li{counter-increment:st;display:flex;gap:10px;align-items:center;color:var(--muted);font-size:.95rem}
 .sponsor-steps li::before{content:counter(st);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1px solid var(--gold-dim);color:var(--gold-hi);font:600 .85rem var(--f-body);flex:none}
-.pkg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.pkg-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 .pkg{display:flex;flex-direction:column;gap:14px;padding:30px 26px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--c)}
-.pkg-gold{--c:#b88a2c}.pkg-silver{--c:#9aa1a8}.pkg-bronze{--c:#a0643a}
+.pkg-gold{--c:#b88a2c}.pkg-silver{--c:#9aa1a8}.pkg-bronze{--c:#a0643a}.pkg-friend{--c:#7a1f2b}
 .pkg h3{font:400 1.5rem/1.2 var(--f-display);margin:0;color:var(--linen)}
 .pkg-price{font:400 2.2rem/1 var(--f-display);color:var(--c);margin:0}
 .pkg ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;flex:1;align-content:start}
@@ -547,4 +547,6 @@ a.ptile:hover .pt-logo{border-color:var(--gold);box-shadow:0 10px 24px -16px rgb
 #sponsorForm input,#sponsorForm select,#sponsorForm textarea{background:#fff}
 #sponsorForm input[type=file]{padding:10px}
 .sent-note{padding:14px 18px;border:1px solid var(--gold-dim);background:#fff;color:var(--gold-hi);font-weight:600;margin:0 0 18px}
-@media (max-width:900px){.pkg-grid{grid-template-columns:1fr}}
+@media (max-width:1100px){.pkg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.pkg-grid{grid-template-columns:1fr}}
+.pkg{padding:28px 22px}
