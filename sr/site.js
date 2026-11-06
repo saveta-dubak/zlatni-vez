@@ -80,6 +80,7 @@ if (form) form.addEventListener("submit", async e => {
 // sponsor form: thank-you note after FormSubmit redirect; Stripe payment buttons appear only after the form was sent
 if (location.search.includes("sent=1") && document.getElementById("sentNote")) {
   document.getElementById("sentNote").hidden = false;
+  const f = document.getElementById("sponsor-form"); if (f) setTimeout(() => f.scrollIntoView(), 50);
   let pay = null; try { pay = sessionStorage.getItem("zvPay"); } catch (e) {}
   const box = document.getElementById("payAfter");
   if (box && (pay === null || pay === "0")) box.hidden = false;

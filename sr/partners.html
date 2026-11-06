@@ -68,12 +68,8 @@
       <div class="sec-head"><h2>Prijava za sponzorstvo</h2><p class="lede">Popunite formular i pošaljite nam svoj logo. Sponzorstvo ćemo vam potvrditi e-poštom.</p></div>
       <p class="sent-note" id="sentNote" hidden>Hvala! Vaša prijava je poslata. Javićemo vam se uskoro.</p>
       <div class="pay-after" id="payAfter" hidden><h3>Sledeći korak: platite onlajn</h3><p>Vaša prijava je poslata. Ako ste izabrali plaćanje onlajn, sada možete bezbedno platiti preko Stripe-a. Molimo koristite istu e-adresu kao u formularu.</p><div class="pay-btns"><a class="btn btn-gold" href="https://buy.stripe.com/aFaeV6bVZ8xb6UtfKG6Na07" target="_blank" rel="noopener">Platite $3,000 – Zlatni</a><a class="btn btn-gold" href="https://buy.stripe.com/eVqdR2gcfeVzemV41Y6Na08" target="_blank" rel="noopener">Platite $2,000 – Srebrni</a><a class="btn btn-gold" href="https://buy.stripe.com/3cI28k3pt9BfbaJ2XU6Na09" target="_blank" rel="noopener">Platite $1,000 – Bronzani</a><a class="btn btn-gold" href="https://buy.stripe.com/00w14g8JN9Bf5Qp5626Na0a" target="_blank" rel="noopener">Platite $500 – Prijatelj</a></div></div>
-      <form id="sponsorForm" method="POST" action="https://formsubmit.co/info@zlatnivez.org" enctype="multipart/form-data">
-        <input type="hidden" name="_subject" value="Nova prijava za sponzorstvo – zlatnivez.org">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_autoresponse" value="Hvala što ste se prijavili da sponzorišete Zlatni Vez! Primili smo vašu prijavu i uskoro ćemo vam potvrditi sponzorstvo e-poštom. Ako ste izabrali plaćanje onlajn, dugmad za plaćanje nalaze se na stranici odmah nakon slanja formulara. Pitanja: info@zlatnivez.org">
-        <input type="hidden" name="_next" value="https://zlatnivez.org/sr/partners.html?sent=1#sponsor-form">
+      <form id="sponsorForm" name="sponsor-application-sr" method="POST" action="/sr/partners.html?sent=1" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="sponsor-application-sr">
         <p hidden><label>Ostavite prazno <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
         <div class="field"><label for="sCompany">Naziv firme</label><input id="sCompany" name="company" required autocomplete="organization"></div>
         <div class="field"><label for="sPerson">Kontakt osoba</label><input id="sPerson" name="contact_person" required autocomplete="name"></div>
