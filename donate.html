@@ -33,14 +33,25 @@
   <section>
     <div class="wrap donate">
       <div>
-        <p class="lede">Donations pay for costumes, rehearsal space, the children's program and the humanitarian projects we support with each concert.</p>
+        <p class="lede">Choose an amount and pay securely through Stripe. Donations pay for costumes, rehearsal space, the children's program and the humanitarian projects we support with each concert.</p>
         <img class="" src="img/g_a09.jpg" alt="Flowers for the singers after a humanitarian concert" style="aspect-ratio:16/9;object-fit:cover;width:100%">
       </div>
-      <div class="donate-card soon">
-        <p class="eyebrow">Coming soon</p>
-        <h3>Online donations are coming soon</h3>
-        <p>We are setting up secure online giving by card, Apple Pay and Google Pay. Until then, write to us and we will tell you how you can give, or support us by coming to our concert.</p>
-        <div class="soon-actions"><a class="btn btn-gold" href="mailto:info@zlatnivez.org?subject=Donation">Email us</a><a class="btn btn-line" data-tickets href="#">Buy concert tickets</a></div>
+      <div class="donate-card">
+        <div class="freq" role="group" aria-label="Donation frequency">
+          <button aria-pressed="true" data-freq="once">One time</button>
+          <button aria-pressed="false" data-freq="monthly">Monthly</button>
+        </div>
+        <div>
+          <label id="amtLbl">Choose an amount</label>
+          <div class="amounts" role="group" aria-labelledby="amtLbl">
+            <button aria-pressed="false" data-amt="25">$25</button>
+            <button aria-pressed="true" data-amt="50">$50</button>
+            <button aria-pressed="false" data-amt="100">$100</button>
+            <button aria-pressed="false" data-amt="other">Other</button>
+          </div>
+        </div>
+        <a class="btn btn-gold" id="donateBtn" href="#" style="justify-content:center">Donate $50 with Stripe</a>
+        <p class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Secure payment through Stripe. Card, Apple Pay and Google Pay.</p>
       </div>
     </div>
   </section>

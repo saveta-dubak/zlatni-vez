@@ -19,9 +19,9 @@ Edit the HTML files directly. There is no generator or template; what you see he
 ## Important settings
 - `site.js` (and `sr/site.js`): `TICKETS_URL` = TicketsCandy event link used by every ticket button;
   `STRIPE_LINKS` = Stripe Payment Links for donations (one-time 25/50/100/other, monthly 25/50/100).
-- Donations: `donate.html` / `sr/donate.html` currently show a "Coming soon" box (`<div class="donate-card soon">`).
-  When the Stripe links are ready, replace that box with `_dev/donate-card-en.html` / `_dev/donate-card-sr.html`
-  and fill `STRIPE_LINKS` in both `site.js` files.
+- Donations: the Donate pages use the Stripe Payment Links in `STRIPE_LINKS` (both `site.js` files).
+  Products/links live in the ensemble's own Stripe account ("Ansambl Tradicionalne Muzike Zlatni Vez").
+  "Other" is hidden when Monthly is selected (Stripe can't do monthly custom amounts).
 - Contact form posts to FormSubmit (formsubmit.co) and arrives at info@zlatnivez.org. No Netlify form settings needed.
 - Address used on the site: 4315 Joliet Ave, Lyons, IL 60534. Email: info@zlatnivez.org.
 

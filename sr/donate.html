@@ -33,14 +33,25 @@
   <section>
     <div class="wrap donate">
       <div>
-        <p class="lede">Donacije pokrivaju nošnje, prostor za probe, dečji program i humanitarne projekte koje podržavamo svakim koncertom.</p>
+        <p class="lede">Izaberite iznos i platite bezbedno preko Stripe-a. Donacije pokrivaju nošnje, prostor za probe, dečji program i humanitarne projekte koje podržavamo svakim koncertom.</p>
         <img class="" src="../img/g_a09.jpg" alt="Cveće za pevačice posle humanitarnog koncerta" style="aspect-ratio:16/9;object-fit:cover;width:100%">
       </div>
-      <div class="donate-card soon">
-        <p class="eyebrow">Uskoro</p>
-        <h3>Onlajn donacije uskoro</h3>
-        <p>Pripremamo bezbedno onlajn doniranje karticom, Apple Pay i Google Pay. Do tada nam pišite i reći ćemo vam kako možete da pomognete, ili nas podržite dolaskom na naš koncert.</p>
-        <div class="soon-actions"><a class="btn btn-gold" href="mailto:info@zlatnivez.org?subject=Donation">Pišite nam</a><a class="btn btn-line" data-tickets href="#">Kupite karte za koncert</a></div>
+      <div class="donate-card">
+        <div class="freq" role="group" aria-label="Učestalost donacije">
+          <button aria-pressed="true" data-freq="once">Jednokratno</button>
+          <button aria-pressed="false" data-freq="monthly">Mesečno</button>
+        </div>
+        <div>
+          <label id="amtLbl">Izaberite iznos</label>
+          <div class="amounts" role="group" aria-labelledby="amtLbl">
+            <button aria-pressed="false" data-amt="25">$25</button>
+            <button aria-pressed="true" data-amt="50">$50</button>
+            <button aria-pressed="false" data-amt="100">$100</button>
+            <button aria-pressed="false" data-amt="other">Ostalo</button>
+          </div>
+        </div>
+        <a class="btn btn-gold" id="donateBtn" href="#" style="justify-content:center">Donirajte $50 preko Stripe-a</a>
+        <p class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Bezbedno plaćanje preko Stripe-a. Kartica, Apple Pay i Google Pay.</p>
       </div>
     </div>
   </section>

@@ -1,8 +1,8 @@
 /* ==== EDIT THESE LINKS BEFORE GOING LIVE ==== */
 const TICKETS_URL = "https://ticketscandy.com/e/zlatni-vez-drugi-humanitarni-koncert-od-korena-do-cikaga-tradicionalno-vece-pesme-u-susret-bozicu-22203";        // paste the TicketsCandy event link for Dec 20
-const STRIPE_LINKS = {                                       // paste Stripe Payment Links (one per amount)
-  once:    { "25":"https://donate.stripe.com/", "50":"https://donate.stripe.com/", "100":"https://donate.stripe.com/", "other":"https://donate.stripe.com/" },
-  monthly: { "25":"https://donate.stripe.com/", "50":"https://donate.stripe.com/", "100":"https://donate.stripe.com/" }
+const STRIPE_LINKS = {                                       // Stripe Payment Links (Zlatni Vez Stripe account)
+  once:    { "25":"https://donate.stripe.com/9B68wIgcf5kZ6Ut9mi6Na00", "50":"https://donate.stripe.com/eVq4gs7FJeVz0w56a66Na01", "100":"https://donate.stripe.com/28EcMY8JN9Bfa6FeGC6Na02", "other":"https://donate.stripe.com/6oU5kwe476p3ceN41Y6Na03" },
+  monthly: { "25":"https://buy.stripe.com/fZu28k3pt14J6Ut6a66Na04", "50":"https://buy.stripe.com/6oUeV67FJfZD0w5aqm6Na05", "100":"https://buy.stripe.com/5kQ14gbVZfZD5QpfKG6Na06" }
 };
 const CONCERT = new Date(2026, 11, 20);
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
