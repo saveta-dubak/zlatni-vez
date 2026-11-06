@@ -77,5 +77,13 @@ if (form) form.addEventListener("submit", async e => {
   }
 });
 
-// sponsor form: thank-you note after FormSubmit redirect
-if (location.search.includes("sent=1") && document.getElementById("sentNote")) { document.getElementById("sentNote").hidden = false; }
+// sponsor form: thank-you note after FormSubmit redirect; Stripe payment buttons appear only after the form was sent
+if (location.search.includes("sent=1") && document.getElementById("sentNote")) {
+  document.getElementById("sentNote").hidden = false;
+  let pay = null; try { pay = sessionStorage.getItem("zvPay"); } catch (e) {}
+  const box = document.getElementById("payAfter");
+  if (box && (pay === null || pay === "0")) box.hidden = false;
+}
+const sponsorForm = document.getElementById("sponsorForm");
+if (sponsorForm) sponsorForm.addEventListener("submit", () => { try { sessionStorage.setItem("zvPay", String(document.getElementById("sPay").selectedIndex)); } catch (e) {} });
+$$("[data-apply]").forEach(a => a.addEventListener("click", () => { const sel = document.getElementById("sPackage"); if (sel) sel.selectedIndex = +a.dataset.apply; }));

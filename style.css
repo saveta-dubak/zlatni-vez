@@ -547,6 +547,11 @@ a.ptile:hover .pt-logo{border-color:var(--gold);box-shadow:0 10px 24px -16px rgb
 #sponsorForm .hint{color:var(--muted);font-size:.82rem}
 #sponsorForm input,#sponsorForm select,#sponsorForm textarea{background:#fff}
 #sponsorForm input[type=file]{padding:10px}
+.pay-after{margin:0 0 22px;padding:20px 22px;border:1px solid var(--gold-dim);background:#fff}
+.pay-after[hidden]{display:none}
+.pay-after h3{margin:0 0 6px}
+.pay-after p{margin:0 0 14px;color:var(--muted)}
+.pay-btns{display:flex;flex-wrap:wrap;gap:10px}
 .sent-note{padding:14px 18px;border:1px solid var(--gold-dim);background:#fff;color:var(--gold-hi);font-weight:600;margin:0 0 18px}
 @media (max-width:1100px){.pkg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.pkg-grid{grid-template-columns:1fr}}
