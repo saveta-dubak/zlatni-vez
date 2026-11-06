@@ -30,6 +30,57 @@
     <div class="wrap"><h1>Hvala onima koji <span class="accent">nas podržavaju</span></h1></div>
   </section>
   <div class="band" aria-hidden="true"></div>
+  <section id="become-sponsor">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Postanite sponzor</p><h2>Podržite naš novogodišnji koncert</h2>
+        <p class="lede">„Od korena do Čikaga“ · nedelja, 20. decembar 2026, 17:00 · Crkva Svetog Nikole, 4315 Joliet Ave, Lyons. Sala kapaciteta 350–400 gostiju. Zlatni Vez je neprofitna organizacija, a svaki koncert ima humanitarnu komponentu.</p></div>
+      <div class="sponsor-top">
+        <ol class="sponsor-steps"><li>Izaberite paket</li><li>Pošaljite nam formular sa vašim logom</li><li>Platite onlajn, ili preko Zelle-a / bankovnim transferom (podaci u PDF-u)</li></ol>
+        <a class="btn btn-line" href="../files/zlatni-vez-sponzorski-paket.pdf" download>Preuzmite sponzorski paket (PDF) ↓</a>
+      </div>
+      <div class="pkg-grid">
+        <article class="pkg pkg-gold">
+          <h3>Zlatni sponzor</h3><p class="pkg-price">$3,000</p>
+          <ul><li>Istaknut logo u programu i brošurama</li><li>Logo na video zidu tokom koncerta</li><li>Rolap baner sponzora u sali</li><li>Javno zahvaljivanje tokom koncerta</li><li>Sponzor uključen u koncertne video snimke na YouTube-u</li><li>10 ulaznica (VIP mesta)</li></ul>
+          <a class="btn btn-gold" href="https://buy.stripe.com/aFaeV6bVZ8xb6UtfKG6Na07" target="_blank" rel="noopener">Platite $3,000 onlajn</a>
+        </article>
+        <article class="pkg pkg-silver">
+          <h3>Srebrni sponzor</h3><p class="pkg-price">$2,000</p>
+          <ul><li>Logo u programu i brošurama</li><li>Logo na video zidu</li><li>Rolap baner sponzora u sali</li><li>Javno zahvaljivanje tokom koncerta</li><li>Sponzor uključen u koncertne video snimke na YouTube-u</li><li>6 ulaznica (VIP mesta)</li></ul>
+          <a class="btn btn-gold" href="https://buy.stripe.com/eVqdR2gcfeVzemV41Y6Na08" target="_blank" rel="noopener">Platite $2,000 onlajn</a>
+        </article>
+        <article class="pkg pkg-bronze">
+          <h3>Bronzani sponzor</h3><p class="pkg-price">$1,000</p>
+          <ul><li>Logo u programu i brošurama</li><li>Zahvaljivanje tokom koncerta</li><li>Sponzor uključen u koncertne video snimke na YouTube-u</li><li>3 ulaznice (VIP mesta)</li></ul>
+          <a class="btn btn-gold" href="https://buy.stripe.com/3cI28k3pt9BfbaJ2XU6Na09" target="_blank" rel="noopener">Platite $1,000 onlajn</a>
+        </article>
+      </div>
+      <p class="pkg-secure">🔒 Bezbedno plaćanje preko Stripe-a</p>
+    </div>
+  </section>
+  <section class="alt" id="sponsor-form">
+    <div class="wrap sponsor-form-wrap">
+      <div class="sec-head"><h2>Prijava za sponzorstvo</h2><p class="lede">Popunite formular i pošaljite nam svoj logo. Sponzorstvo ćemo vam potvrditi e-poštom.</p></div>
+      <p class="sent-note" id="sentNote" hidden>Hvala! Vaša prijava je poslata. Javićemo vam se uskoro.</p>
+      <form id="sponsorForm" method="POST" action="https://formsubmit.co/info@zlatnivez.org" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="Nova prijava za sponzorstvo – zlatnivez.org">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://zlatnivez.org/sr/partners.html?sent=1#become-sponsor">
+        <p hidden><label>Ostavite prazno <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label for="sCompany">Naziv firme</label><input id="sCompany" name="company" required autocomplete="organization"></div>
+        <div class="field"><label for="sPerson">Kontakt osoba</label><input id="sPerson" name="contact_person" required autocomplete="name"></div>
+        <div class="field"><label for="sEmail">E-pošta</label><input id="sEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="sPhone">Telefon</label><input id="sPhone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="sPackage">Paket</label><select id="sPackage" name="package"><option>Zlatni sponzor – $3,000</option><option>Srebrni sponzor – $2,000</option><option>Bronzani sponzor – $1,000</option><option>Druga vrsta podrške</option></select></div>
+        <div class="field"><label for="sPay">Kako ćete platiti?</label><select id="sPay" name="payment_method"><option>Onlajn preko Stripe-a</option><option>Zelle</option><option>Bankovni transfer</option><option>Ček</option></select></div>
+        <div class="field full"><label for="sWeb">Sajt (nije obavezno)</label><input id="sWeb" name="website" type="url" placeholder="https://"></div>
+        <div class="field full"><label for="sLogo">Vaš logo</label><input id="sLogo" name="attachment" type="file" accept=".png,.jpg,.jpeg,.svg,.pdf,.ai,.eps,image/*" required><small class="hint">PNG, SVG ili PDF u visokoj rezoluciji, najviše 5 MB</small></div>
+        <div class="field full"><label for="sMsg">Poruka (nije obavezno)</label><textarea id="sMsg" name="message"></textarea></div>
+        <div class="form-foot"><button class="btn btn-red" type="submit">Pošaljite prijavu</button></div>
+      </form>
+    </div>
+  </section>
   <section>
     <div class="wrap">
       <div class="sec-head"><p class="eyebrow">Sponzori</p><h2>Naši sponzori</h2>
@@ -42,13 +93,6 @@
       <div class="sec-head"><p class="eyebrow">Partneri</p><h2>Naši partneri</h2>
         <p class="lede">Prijatelji koji nam pomažu sa štampom, slatkišima, sajtom, društvenim mrežama i videom.</p></div>
       <div class="pgrid"><a class="ptile linked " href="https://www.onlycutsandprints.com" target="_blank" rel="noopener" aria-label="Sajt: Only Cuts &amp; Prints"><div class="pt-logo"><img src="../img/logo_onlycuts.png" alt="Only Cuts &amp; Prints logo"></div><span class="pt-name">Only Cuts &amp; Prints</span><span class="pt-role">Sponzor štampe</span><span class="pt-visit">Posetite sajt ↗</span></a><a class="ptile linked " href="https://www.balkan-bakery.com" target="_blank" rel="noopener" aria-label="Sajt: Balkan Bakery"><div class="pt-logo"><img src="../img/logo_balkanbakery.png" alt="Balkan Bakery logo"></div><span class="pt-name">Balkan Bakery</span><span class="pt-role">Kolači i piće</span><span class="pt-visit">Posetite sajt ↗</span></a><a class="ptile linked " href="https://www.balkanchildren.com" target="_blank" rel="noopener" aria-label="Sajt: Balkan Children"><div class="pt-logo"><img src="../img/logo_balkanchildren.png" alt="Balkan Children logo"></div><span class="pt-name">Balkan Children</span><span class="pt-role">Sponzor sajta</span><span class="pt-visit">Posetite sajt ↗</span></a><a class="ptile linked " href="https://www.digitaldreamsbuilder.com" target="_blank" rel="noopener" aria-label="Sajt: Digital Dreams Builder"><div class="pt-logo"><img src="../img/logo_digitaldreams.png" alt="Digital Dreams Builder logo"></div><span class="pt-name">Digital Dreams Builder</span><span class="pt-role">Instagram rilsi</span><span class="pt-visit">Posetite sajt ↗</span></a><div class="ptile "><div class="pt-logo"><img src="../img/logo_dreams.png" alt="Dreams Production logo"></div><span class="pt-name">Dreams Production</span><span class="pt-role">Video produkcija</span></div><div class="ptile "><div class="pt-logo"><img src="../img/logo_rhapsody.png" alt="Rhapsody Videos logo"></div><span class="pt-name">Rhapsody Videos</span><span class="pt-role">Snimanje koncerta</span></div></div>
-    </div>
-  </section>
-  <section>
-    <div class="wrap reg-band">
-      <div><p class="eyebrow">Postanite sponzor</p><h2>Podržite srpsku tradiciju u Čikagu</h2>
-        <p class="lede">Da li bi vaša firma želela da podrži Zlatni Vez? Rado ćemo vas čuti.</p></div>
-      <a class="btn btn-red" href="contact.html">Kontaktirajte nas</a>
     </div>
   </section>
 </main>

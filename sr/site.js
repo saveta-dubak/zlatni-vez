@@ -76,3 +76,6 @@ if (form) form.addEventListener("submit", async e => {
     status.innerHTML = "Izvinite, poruka nije poslata. Pišite nam na <a href=\"mailto:info@zlatnivez.org\">info@zlatnivez.org</a>.";
   }
 });
+
+// sponsor form: thank-you note after FormSubmit redirect
+if (location.search.includes("sent=1") && document.getElementById("sentNote")) { document.getElementById("sentNote").hidden = false; }

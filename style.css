@@ -526,3 +526,25 @@ a.ptile:hover .pt-logo{border-color:var(--gold);box-shadow:0 10px 24px -16px rgb
 .plogo .logo-ph{width:120px;height:56px;border:1px dashed var(--gold);display:grid;place-items:center;font:600 .62rem var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:10px;background:var(--ink)}
 .minor .plogo .logo-ph{width:90px;height:42px}
 .wide-ph{margin-bottom:clamp(40px,6vw,64px)}
+
+/* ---- become a sponsor (partners page) ---- */
+.sponsor-top{display:flex;flex-wrap:wrap;gap:18px 32px;align-items:center;justify-content:space-between;margin:-8px 0 30px}
+.sponsor-steps{display:flex;flex-wrap:wrap;gap:10px 26px;margin:0;padding:0;list-style:none;counter-reset:st}
+.sponsor-steps li{counter-increment:st;display:flex;gap:10px;align-items:center;color:var(--muted);font-size:.95rem}
+.sponsor-steps li::before{content:counter(st);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1px solid var(--gold-dim);color:var(--gold-hi);font:600 .85rem var(--f-body);flex:none}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.pkg{display:flex;flex-direction:column;gap:14px;padding:30px 26px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--c)}
+.pkg-gold{--c:#b88a2c}.pkg-silver{--c:#9aa1a8}.pkg-bronze{--c:#a0643a}
+.pkg h3{font:400 1.5rem/1.2 var(--f-display);margin:0;color:var(--linen)}
+.pkg-price{font:400 2.2rem/1 var(--f-display);color:var(--c);margin:0}
+.pkg ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;flex:1;align-content:start}
+.pkg li{position:relative;padding-left:22px;font-size:.95rem;line-height:1.45}
+.pkg li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;transform:rotate(45deg);background:var(--c);opacity:.85}
+.pkg .btn{align-self:flex-start;margin-top:6px}
+.pkg-secure{margin:18px 0 0;font-size:.85rem;color:var(--muted)}
+.sponsor-form-wrap{max-width:860px}
+#sponsorForm .hint{color:var(--muted);font-size:.82rem}
+#sponsorForm input,#sponsorForm select,#sponsorForm textarea{background:#fff}
+#sponsorForm input[type=file]{padding:10px}
+.sent-note{padding:14px 18px;border:1px solid var(--gold-dim);background:#fff;color:var(--gold-hi);font-weight:600;margin:0 0 18px}
+@media (max-width:900px){.pkg-grid{grid-template-columns:1fr}}
