@@ -35,50 +35,50 @@
       <div class="sec-head"><p class="eyebrow">Become a sponsor</p><h2>Sponsor our New Year's concert</h2>
         <p class="lede">„Od korena do Čikaga“ · Sunday, December 20, 2026, 5:00 PM · St. Nicholas Church, 4315 Joliet Ave, Lyons. A hall of 350–400 guests. Zlatni Vez is a nonprofit, and every concert has a humanitarian part.</p></div>
       <div class="sponsor-top">
-        <ol class="sponsor-steps"><li>Choose a package</li><li>Send us the form with your logo</li><li>Pay online with your package’s button</li></ol>
+        <ol class="sponsor-steps"><li>Choose a package</li><li>Fill in the form and upload your logo</li><li>Pay securely online – the payment page opens right after you send the form</li></ol>
         <a class="btn btn-line" href="files/zlatni-vez-sponzorski-paket.pdf" download>Download sponsorship package (PDF) ↓</a>
       </div>
       <div class="pkg-grid">
         <article class="pkg pkg-gold">
           <h3>Gold sponsor</h3><p class="pkg-price">$3,000</p>
           <ul><li>Prominent logo in the program and brochures</li><li>Logo on the video wall during the concert</li><li>Public thank-you during the concert</li><li>Included in the concert videos on YouTube</li><li>Free VIP tickets available by request</li></ul>
-          <a class="btn btn-gold" href="https://buy.stripe.com/aFaeV6bVZ8xb6UtfKG6Na07" target="_blank" rel="noopener">Pay $3,000 online</a>
+          <a class="btn btn-gold" href="#sponsor-form" data-apply="gold">Apply now</a>
         </article>
         <article class="pkg pkg-silver">
           <h3>Silver sponsor</h3><p class="pkg-price">$2,000</p>
           <ul><li>Logo in the program and brochures</li><li>Logo on the video wall</li><li>Public thank-you during the concert</li><li>Included in the concert videos on YouTube</li><li>Free VIP tickets available by request</li></ul>
-          <a class="btn btn-gold" href="https://buy.stripe.com/eVqdR2gcfeVzemV41Y6Na08" target="_blank" rel="noopener">Pay $2,000 online</a>
+          <a class="btn btn-gold" href="#sponsor-form" data-apply="silver">Apply now</a>
         </article>
         <article class="pkg pkg-bronze">
           <h3>Bronze sponsor</h3><p class="pkg-price">$1,000</p>
           <ul><li>Logo in the program and brochures</li><li>Thank-you during the concert</li><li>Included in the concert videos on YouTube</li><li>Free VIP tickets available by request</li></ul>
-          <a class="btn btn-gold" href="https://buy.stripe.com/3cI28k3pt9BfbaJ2XU6Na09" target="_blank" rel="noopener">Pay $1,000 online</a>
+          <a class="btn btn-gold" href="#sponsor-form" data-apply="bronze">Apply now</a>
         </article>
         <article class="pkg pkg-friend">
           <h3>Friend sponsor</h3><p class="pkg-price">$500</p>
           <ul><li>Logo in the program and brochures</li><li>Thank-you during the concert</li></ul>
-          <a class="btn btn-gold" href="https://buy.stripe.com/00w14g8JN9Bf5Qp5626Na0a" target="_blank" rel="noopener">Pay $500 online</a>
+          <a class="btn btn-gold" href="#sponsor-form" data-apply="friend">Apply now</a>
         </article>
       </div>
-      <p class="pkg-secure">🔒 Secure payment through Stripe</p>
+      <p class="pkg-secure">🔒 Secure payment through Stripe (card, Apple Pay, Google Pay)</p>
     </div>
   </section>
   <section class="alt" id="sponsor-form">
     <div class="wrap sponsor-form-wrap">
-      <div class="sec-head"><h2>Sponsor application</h2><p class="lede">Fill in the form and upload your logo. We will confirm your sponsorship by email.</p></div>
+      <div class="sec-head"><h2>Sponsor application</h2><p class="lede">Fill in the form and upload your logo. After you send it, the secure payment page for your package opens.</p></div>
       <p class="sent-note" id="sentNote" hidden>Thank you! Your application was sent. We will get back to you soon.</p>
-      <form id="sponsorForm" name="sponsor-application" method="POST" action="/partners.html?sent=1" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+      <form id="sponsorForm" data-sending="Sending…" data-redirect="Thank you! Your application was sent. Opening the secure payment page…" data-thanks="Thank you! Your application was sent. We will get back to you soon." data-error="Sorry, the application could not be sent. Please try again or write to info@zlatnivez.org." name="sponsor-application" method="POST" action="/partners.html?sent=1" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="sponsor-application">
         <p hidden><label>Leave empty <input name="bot-field"></label></p>
         <div class="field"><label for="sCompany">Company / business name</label><input id="sCompany" name="company" required autocomplete="organization"></div>
         <div class="field"><label for="sPerson">Contact person</label><input id="sPerson" name="contact_person" required autocomplete="name"></div>
         <div class="field"><label for="sEmail">Email</label><input id="sEmail" name="email" type="email" required autocomplete="email"></div>
         <div class="field"><label for="sPhone">Phone</label><input id="sPhone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="field full"><label for="sPackage">Package</label><select id="sPackage" name="package"><option>Gold sponsor – $3,000</option><option>Silver sponsor – $2,000</option><option>Bronze sponsor – $1,000</option><option>Friend sponsor – $500</option><option>Other support</option></select></div>
+        <div class="field full"><label for="sPackage">Package</label><select id="sPackage" name="package"><option data-key="gold" data-pay="https://buy.stripe.com/aFaeV6bVZ8xb6UtfKG6Na07">Gold sponsor – $3,000</option><option data-key="silver" data-pay="https://buy.stripe.com/eVqdR2gcfeVzemV41Y6Na08">Silver sponsor – $2,000</option><option data-key="bronze" data-pay="https://buy.stripe.com/3cI28k3pt9BfbaJ2XU6Na09">Bronze sponsor – $1,000</option><option data-key="friend" data-pay="https://buy.stripe.com/00w14g8JN9Bf5Qp5626Na0a">Friend sponsor – $500</option><option data-key="other">Other support</option></select></div>
         <div class="field full"><label for="sWeb">Website (optional)</label><input id="sWeb" name="website" type="url" placeholder="https://"></div>
         <div class="field full"><label for="sLogo">Your logo</label><input id="sLogo" name="attachment" type="file" accept=".png,.jpg,.jpeg,.svg,.pdf,.ai,.eps,image/*" required><small class="hint">PNG, SVG or PDF in high resolution, max. 5 MB</small></div>
         <div class="field full"><label for="sMsg">Message (optional)</label><textarea id="sMsg" name="message"></textarea></div>
-        <div class="form-foot"><button class="btn btn-red" type="submit">Send application</button></div>
+        <div class="form-foot"><button class="btn btn-red" type="submit">Send & continue to payment</button><span class="status" id="sponsorStatus" role="status"></span></div>
       </form>
     </div>
   </section>

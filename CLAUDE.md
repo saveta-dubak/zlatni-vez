@@ -23,8 +23,9 @@ Edit the HTML files directly. There is no generator or template; what you see he
   Products/links live in the ensemble's own Stripe account ("Ansambl Tradicionalne Muzike Zlatni Vez").
   "Other" is hidden when Monthly is selected (Stripe can't do monthly custom amounts).
 - Partners page "Become a sponsor" section (`#become-sponsor`, both languages): Gold $3,000 / Silver $2,000 / Bronze $1,000 / Friend sponsor $500
-  for the Dec 20, 2026 New Year's concert. Each "Pay … online" button is a Stripe Payment Link (written directly in
-  `partners.html` / `sr/partners.html`). Sponsorship PDF: `files/zlatni-vez-sponzorski-paket.pdf` (web-compressed copy).
+  for the Dec 20, 2026 New Year's concert. Flow: each package card has an "Apply now" button that jumps to the form and preselects the package;
+  after the form is sent (Netlify Forms, via fetch in site.js), the browser opens that package's Stripe Payment Link
+  (`data-pay` on the `<option>`s of `#sPackage` in `partners.html` / `sr/partners.html`). Sponsorship PDF: `files/zlatni-vez-sponzorski-paket.pdf` (web-compressed copy).
   The sponsor form (`#sponsorForm`) posts to FormSubmit with the logo as a file attachment (`name="attachment"`).
 - Contact form posts to FormSubmit (formsubmit.co) and arrives at info@zlatnivez.org. No Netlify form settings needed.
 - Address used on the site: 4315 Joliet Ave, Lyons, IL 60534. Email: info@zlatnivez.org.

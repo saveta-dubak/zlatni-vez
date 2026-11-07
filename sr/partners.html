@@ -35,50 +35,50 @@
       <div class="sec-head"><p class="eyebrow">Postanite sponzor</p><h2>Podržite naš novogodišnji koncert</h2>
         <p class="lede">„Od korena do Čikaga“ · nedelja, 20. decembar 2026, 17:00 · Crkva Svetog Nikole, 4315 Joliet Ave, Lyons. Sala kapaciteta 350–400 gostiju. Zlatni Vez je neprofitna organizacija, a svaki koncert ima humanitarnu komponentu.</p></div>
       <div class="sponsor-top">
-        <ol class="sponsor-steps"><li>Izaberite paket</li><li>Pošaljite nam formular sa vašim logom</li><li>Platite onlajn dugmetom vašeg paketa</li></ol>
+        <ol class="sponsor-steps"><li>Izaberite paket</li><li>Popunite formular i pošaljite logo</li><li>Platite bezbedno onlajn – stranica za plaćanje se otvara odmah nakon slanja formulara</li></ol>
         <a class="btn btn-line" href="../files/zlatni-vez-sponzorski-paket.pdf" download>Preuzmite sponzorski paket (PDF) ↓</a>
       </div>
       <div class="pkg-grid">
         <article class="pkg pkg-gold">
           <h3>Zlatni sponzor</h3><p class="pkg-price">$3,000</p>
           <ul><li>Istaknut logo u programu i brošurama</li><li>Logo na video zidu tokom koncerta</li><li>Javna zahvalnost tokom koncerta</li><li>Vaša firma u video snimcima koncerta na YouTube-u</li><li>Besplatne VIP ulaznice dostupne na zahtev</li></ul>
-          <a class="btn btn-gold" href="https://buy.stripe.com/aFaeV6bVZ8xb6UtfKG6Na07" target="_blank" rel="noopener">Platite $3,000 onlajn</a>
+          <a class="btn btn-gold" href="#sponsor-form" data-apply="gold">Prijavite se</a>
         </article>
         <article class="pkg pkg-silver">
           <h3>Srebrni sponzor</h3><p class="pkg-price">$2,000</p>
           <ul><li>Logo u programu i brošurama</li><li>Logo na video zidu</li><li>Javna zahvalnost tokom koncerta</li><li>Vaša firma u video snimcima koncerta na YouTube-u</li><li>Besplatne VIP ulaznice dostupne na zahtev</li></ul>
-          <a class="btn btn-gold" href="https://buy.stripe.com/eVqdR2gcfeVzemV41Y6Na08" target="_blank" rel="noopener">Platite $2,000 onlajn</a>
+          <a class="btn btn-gold" href="#sponsor-form" data-apply="silver">Prijavite se</a>
         </article>
         <article class="pkg pkg-bronze">
           <h3>Bronzani sponzor</h3><p class="pkg-price">$1,000</p>
           <ul><li>Logo u programu i brošurama</li><li>Zahvalnost tokom koncerta</li><li>Vaša firma u video snimcima koncerta na YouTube-u</li><li>Besplatne VIP ulaznice dostupne na zahtev</li></ul>
-          <a class="btn btn-gold" href="https://buy.stripe.com/3cI28k3pt9BfbaJ2XU6Na09" target="_blank" rel="noopener">Platite $1,000 onlajn</a>
+          <a class="btn btn-gold" href="#sponsor-form" data-apply="bronze">Prijavite se</a>
         </article>
         <article class="pkg pkg-friend">
           <h3>Prijatelj ansambla</h3><p class="pkg-price">$500</p>
           <ul><li>Logo u programu i brošurama</li><li>Zahvalnost tokom koncerta</li></ul>
-          <a class="btn btn-gold" href="https://buy.stripe.com/00w14g8JN9Bf5Qp5626Na0a" target="_blank" rel="noopener">Platite $500 onlajn</a>
+          <a class="btn btn-gold" href="#sponsor-form" data-apply="friend">Prijavite se</a>
         </article>
       </div>
-      <p class="pkg-secure">🔒 Bezbedno plaćanje preko Stripe-a</p>
+      <p class="pkg-secure">🔒 Bezbedno plaćanje preko Stripe-a (kartica, Apple Pay, Google Pay)</p>
     </div>
   </section>
   <section class="alt" id="sponsor-form">
     <div class="wrap sponsor-form-wrap">
-      <div class="sec-head"><h2>Prijava za sponzorstvo</h2><p class="lede">Popunite formular i pošaljite nam svoj logo. Sponzorstvo ćemo vam potvrditi e-poštom.</p></div>
+      <div class="sec-head"><h2>Prijava za sponzorstvo</h2><p class="lede">Popunite formular i pošaljite svoj logo. Nakon slanja otvara se stranica za bezbedno plaćanje vašeg paketa.</p></div>
       <p class="sent-note" id="sentNote" hidden>Hvala! Vaša prijava je poslata. Javićemo vam se uskoro.</p>
-      <form id="sponsorForm" name="sponsor-application-sr" method="POST" action="/sr/partners.html?sent=1" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+      <form id="sponsorForm" data-sending="Šalje se…" data-redirect="Hvala! Vaša prijava je poslata. Otvara se stranica za bezbedno plaćanje…" data-thanks="Hvala! Vaša prijava je poslata. Javićemo vam se uskoro." data-error="Izvinite, prijava nije poslata. Pokušajte ponovo ili pišite na info@zlatnivez.org." name="sponsor-application-sr" method="POST" action="/sr/partners.html?sent=1" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="sponsor-application-sr">
         <p hidden><label>Ostavite prazno <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
         <div class="field"><label for="sCompany">Naziv firme</label><input id="sCompany" name="company" required autocomplete="organization"></div>
         <div class="field"><label for="sPerson">Kontakt osoba</label><input id="sPerson" name="contact_person" required autocomplete="name"></div>
         <div class="field"><label for="sEmail">E-pošta</label><input id="sEmail" name="email" type="email" required autocomplete="email"></div>
         <div class="field"><label for="sPhone">Telefon</label><input id="sPhone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="field full"><label for="sPackage">Paket</label><select id="sPackage" name="package"><option>Zlatni sponzor – $3,000</option><option>Srebrni sponzor – $2,000</option><option>Bronzani sponzor – $1,000</option><option>Prijatelj ansambla – $500</option><option>Druga vrsta podrške</option></select></div>
+        <div class="field full"><label for="sPackage">Paket</label><select id="sPackage" name="package"><option data-key="gold" data-pay="https://buy.stripe.com/aFaeV6bVZ8xb6UtfKG6Na07">Zlatni sponzor – $3,000</option><option data-key="silver" data-pay="https://buy.stripe.com/eVqdR2gcfeVzemV41Y6Na08">Srebrni sponzor – $2,000</option><option data-key="bronze" data-pay="https://buy.stripe.com/3cI28k3pt9BfbaJ2XU6Na09">Bronzani sponzor – $1,000</option><option data-key="friend" data-pay="https://buy.stripe.com/00w14g8JN9Bf5Qp5626Na0a">Prijatelj ansambla – $500</option><option data-key="other">Druga vrsta podrške</option></select></div>
         <div class="field full"><label for="sWeb">Sajt (nije obavezno)</label><input id="sWeb" name="website" type="url" placeholder="https://"></div>
         <div class="field full"><label for="sLogo">Vaš logo</label><input id="sLogo" name="attachment" type="file" accept=".png,.jpg,.jpeg,.svg,.pdf,.ai,.eps,image/*" required><small class="hint">PNG, SVG ili PDF u visokoj rezoluciji, najviše 5 MB</small></div>
         <div class="field full"><label for="sMsg">Poruka (nije obavezno)</label><textarea id="sMsg" name="message"></textarea></div>
-        <div class="form-foot"><button class="btn btn-red" type="submit">Pošaljite prijavu</button></div>
+        <div class="form-foot"><button class="btn btn-red" type="submit">Pošaljite i nastavite na plaćanje</button><span class="status" id="sponsorStatus" role="status"></span></div>
       </form>
     </div>
   </section>

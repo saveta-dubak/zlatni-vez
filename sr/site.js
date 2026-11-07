@@ -82,3 +82,23 @@ if (location.search.includes("sent=1") && document.getElementById("sentNote")) {
   document.getElementById("sentNote").hidden = false;
   const f = document.getElementById("sponsor-form"); if (f) setTimeout(() => f.scrollIntoView(), 50);
 }
+
+// sponsor flow: "Apply now" preselects the package; after sending the form, open the Stripe payment page
+(() => {
+  const form = document.getElementById("sponsorForm"); if (!form) return;
+  const sel = document.getElementById("sPackage"), st = document.getElementById("sponsorStatus");
+  document.querySelectorAll("[data-apply]").forEach(a => a.addEventListener("click", () => {
+    const o = sel.querySelector('option[data-key="' + a.dataset.apply + '"]'); if (o) sel.value = o.value;
+  }));
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const btn = form.querySelector("button[type=submit]"); btn.disabled = true; st.textContent = form.dataset.sending;
+    const pay = sel.options[sel.selectedIndex].dataset.pay;
+    try {
+      const res = await fetch(form.getAttribute("action") || "/", { method: "POST", body: new FormData(form) });
+      if (!res.ok) throw 0;
+      if (pay) { st.textContent = form.dataset.redirect; setTimeout(() => { location.href = pay; }, 1200); }
+      else { form.reset(); st.textContent = form.dataset.thanks; btn.disabled = false; }
+    } catch (err) { st.textContent = form.dataset.error; btn.disabled = false; }
+  });
+})();

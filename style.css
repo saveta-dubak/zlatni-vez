@@ -563,3 +563,5 @@ a.ptile:hover .pt-logo{border-color:var(--gold);box-shadow:0 10px 24px -16px rgb
 .pkg{padding:28px 22px}
 .copyline a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .copyline a:hover{color:var(--gold-hi)}
+
+#sponsorForm button[disabled]{opacity:.6;cursor:wait}
