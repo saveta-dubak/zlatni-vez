@@ -561,3 +561,5 @@ a.ptile:hover .pt-logo{border-color:var(--gold);box-shadow:0 10px 24px -16px rgb
 @media (max-width:1100px){.pkg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.pkg-grid{grid-template-columns:1fr}}
 .pkg{padding:28px 22px}
+.copyline a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.copyline a:hover{color:var(--gold-hi)}
