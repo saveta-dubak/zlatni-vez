@@ -30,6 +30,10 @@ Edit the HTML files directly. There is no generator or template; what you see he
 - Contact form posts to FormSubmit (formsubmit.co) and arrives at info@zlatnivez.org. No Netlify form settings needed.
 - Address used on the site: 4315 Joliet Ave, Lyons, IL 60534. Email: info@zlatnivez.org.
 
+## SEO
+`sitemap.xml` lists every page (EN + SR, with hreflang alternates) and `robots.txt` points to it.
+When you add or remove a page, update `sitemap.xml` too.
+
 ## Images
 `img/` — photos are JPG, sponsor logos are `logo_*.png`. Keep new photos under ~1400 px wide and
 add a descriptive `alt` text (Serbian alt text on `sr/` pages).
