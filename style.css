@@ -151,6 +151,11 @@ section{padding-block:clamp(64px,9vw,112px)}
 .roster span{color:var(--muted);font-size:.92rem}
 .roster.side{grid-template-columns:1fr}
 .roster.side li{padding:11px 0}
+.roster .lead{grid-column:1/-1;padding-bottom:22px}
+.roster .lead b{font-size:1.7rem}
+.roster .lead span{color:var(--gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.roster.side .lead{padding-bottom:16px}
+.roster.side .lead b{font-size:1.5rem}
 .about-members .eyebrow{margin-bottom:10px}
 @media (max-width:860px){.roster{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.roster{grid-template-columns:1fr}}
