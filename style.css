@@ -147,15 +147,10 @@ section{padding-block:clamp(64px,9vw,112px)}
 /* roster */
 .roster{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,4vw,56px)}
 .roster li{padding:16px 0;border-bottom:1px solid var(--line);display:grid;gap:3px;align-content:start}
-.roster b{font:400 1.25rem var(--f-display);color:var(--linen)}
+.roster b{font:400 1.25rem var(--f-display);color:var(--gold-hi)}
 .roster span{color:var(--muted);font-size:.92rem}
-.roster .lead{grid-column:1/-1;padding-bottom:22px}
-.roster .lead b{font-size:1.7rem;color:var(--gold-hi)}
-.roster .lead span{color:var(--gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
 .roster.side{grid-template-columns:1fr}
 .roster.side li{padding:11px 0}
-.roster.side .lead{padding-bottom:16px}
-.roster.side .lead b{font-size:1.5rem}
 .about-members .eyebrow{margin-bottom:10px}
 @media (max-width:860px){.roster{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.roster{grid-template-columns:1fr}}
