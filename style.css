@@ -579,3 +579,14 @@ a.ptile:hover .pt-logo{border-color:var(--gold);box-shadow:0 10px 24px -16px rgb
 
 .gala-gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;margin:18px 0 8px}
 @media (max-width:700px){.gala-gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}}
+
+/* concerts submenu */
+.links .has-sub{position:relative}
+.links .sub{list-style:none;margin:0;padding:8px 0;position:absolute;left:50%;top:100%;transform:translateX(-50%);min-width:220px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.08);display:none;z-index:50}
+.links .has-sub:hover .sub,.links .has-sub:focus-within .sub{display:block}
+.links .sub a{display:block;padding:9px 18px;white-space:nowrap;font-size:.95em}
+.links .sub a:hover{background:var(--panel)}
+@media (max-width:1140px){.links .sub{position:static;transform:none;display:block;border:0;box-shadow:none;background:transparent;padding:0 0 6px;min-width:0}.links .sub a{font-size:.85em;opacity:.75;padding:6px 0}}
+.links .sub::before{content:"";position:absolute;left:0;right:0;top:-16px;height:16px}
+@media (max-width:1140px){.links .sub{text-align:center}.links .sub::before{display:none}}
+@media (max-width:1140px){.links .has-sub{display:flex;flex-direction:column;align-items:center}}
