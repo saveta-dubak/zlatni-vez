@@ -102,3 +102,8 @@ if (location.search.includes("sent=1") && document.getElementById("sentNote")) {
     } catch (err) { st.textContent = form.dataset.error; btn.disabled = false; }
   });
 })();
+
+// concerts submenu toggle (tap on mobile)
+document.querySelectorAll(".sub-toggle").forEach(b => b.addEventListener("click", e => {
+  e.preventDefault(); const li = b.closest(".has-sub"); const o = li.classList.toggle("open"); b.setAttribute("aria-expanded", o);
+}));

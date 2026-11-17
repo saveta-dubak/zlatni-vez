@@ -591,3 +591,18 @@ a.ptile:hover .pt-logo{border-color:var(--gold);box-shadow:0 10px 24px -16px rgb
 @media (max-width:1140px){.links .sub{text-align:center}.links .sub::before{display:none}}
 @media (max-width:1140px){.links .has-sub{display:flex;flex-direction:column;align-items:center}}
 .article-body a{color:#7a1f2b;text-decoration:underline;text-underline-offset:3px}.article-body a:hover{color:#b88a2c}
+
+/* concerts submenu: caret + tap-to-open on mobile */
+.sub-toggle{background:none;border:0;padding:4px;margin-left:2px;cursor:pointer;color:inherit;vertical-align:middle}
+.sub-toggle::after{content:"";display:inline-block;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-3px) rotate(45deg);transition:transform .2s;opacity:.7}
+.has-sub:hover .sub-toggle::after,.has-sub.open .sub-toggle::after{transform:translateY(0) rotate(-135deg)}
+.links .has-sub{display:flex;align-items:center;flex-wrap:wrap}
+@media (max-width:1140px){
+  .links .has-sub{flex-direction:row;justify-content:center}
+  .links .has-sub .sub{display:none;flex-basis:100%}
+  .links .has-sub.open .sub{display:block}
+  .links .has-sub:hover .sub{display:none}
+  .links .has-sub.open:hover .sub{display:block}
+  .sub-toggle{padding:10px 12px}
+}
+@media (min-width:1141px){.links .sub{top:calc(100% + 10px)}.links .sub::before{top:-10px;height:10px}}
